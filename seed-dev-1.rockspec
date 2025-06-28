@@ -2,11 +2,10 @@ rockspec_format = "3.0"
 package = "seed"
 version = "dev-1"
 source = {
-   url = "git+https://git@codeberg.org/quien/seed.git",
+   url = "git+https://github.com/xyz072004/seed.git",
 }
 description = {
-   summary = "Tiny module for building Web applications",
-   homepage = "https://codeberg.org/quien/seed",
+   homepage = "https://072004.xyz/software/seed",
    license = "MIT",
 }
 build_dependencies = {
@@ -16,6 +15,7 @@ build_dependencies = {
 build = {
    type = "fennel",
    modules = {
-      ["seed"] = "src/seed.fnl",
+      ["seed.element"] = "src/seed/element.fnl",
+      ["seed.cell"] = "src/seed/cell.fnl",
    },
 }
